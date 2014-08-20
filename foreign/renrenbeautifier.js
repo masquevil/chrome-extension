@@ -19,4 +19,4 @@ var removeAdApp = function(){
 }
 removeAdApp();
 
-//Just 1
+//Just 2
