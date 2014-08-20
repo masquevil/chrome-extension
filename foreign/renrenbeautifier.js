@@ -4,6 +4,7 @@
 // @version    0.11
 // @description  Remove ad and something I dislike.
 // @match      http://*.renren.com/*
+// @run-at      document-end
 // @copyright  2013+, Masquevil
 // ==/UserScript==
 
