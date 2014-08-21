@@ -18,5 +18,4 @@ var removeAdApp = function(){
     }
 }
 removeAdApp();
-
-//Just 2
+webpager.setFold(true);\
