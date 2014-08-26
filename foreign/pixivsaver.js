@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       Pixiv Saver
 // @namespace  http://www.soulran.com/
-// @version    0.2
+// @version    0.21
 // @description  Download the image with "mode=medium" in pixiv in the complete size.
 // @match      http://www.pixiv.net/member_illust.php?mode=medium&illust_id=*
 // @run-at      document-end
@@ -17,4 +17,5 @@
 		document.body.innerHTML = document.body.innerHTML.replace(memm[0], matt[1] + matt[2] + "\" download");
 		clearInterval(itttval);
 	}
+	setTimeout(function(){clearInterval(itttval)},10000);
 })();
