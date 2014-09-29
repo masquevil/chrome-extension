@@ -18,16 +18,16 @@
 		document.body.innerHTML = document.body.innerHTML.replace(memm[0], "href=\"" + orisrc + "\" download=" + memm[1]);
 		var img = new Image();
 		img.src = orisrc;
-		img.onerror = function(){
-			var tail = function(){switch(srctry++){case 0:return ".png";case 1:return "gif";default:return false;}};
+		img.onerror = setTimeout(function(){
+			var tail = (function(){switch(srctry++){case 0:return ".png";case 1:return "gif";default:return false;}})();
 			if(tail){
 				img.src = ori + tail;
-				document.body.innerHTML = document.body.innerHTML.replace("href=\"" + orisrc + "\"", "href=\"" + orisrc = img.src + "\"");
+				document.body.innerHTML = document.body.innerHTML.replace("href=\"" + orisrc + "\"", "href=\"" + (orisrc = img.src) + "\"");
 			}
 			else {
-				document.body.innerHTML = document.body.innerHTML.replace("href=\"" + orisrc + "\" download=" + memm[1], "href=\"" + orisrc = memm[0] + "\"");
+				document.body.innerHTML = document.body.innerHTML.replace("href=\"" + orisrc + "\" download=" + memm[1], "href=\"" + (orisrc = memm[0]) + "\"");
 			}
-		};
+		},300);
 		clearInterval(itttval);
 	}
 	setTimeout(function(){clearInterval(itttval)},10000);
