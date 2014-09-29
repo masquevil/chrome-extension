@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       Pixiv Saver
 // @namespace  http://www.soulran.com/
-// @version    0.3.1
+// @version    0.3.2
 // @description  Download the image with "mode=medium" in pixiv in the complete size.
 // @match      http://www.pixiv.net/member_illust.php?mode=medium&illust_id=*
 // @run-at      document-end
@@ -18,7 +18,7 @@
 		document.body.innerHTML = document.body.innerHTML.replace(memm[0], "href=\"" + orisrc + "\" download=" + memm[1]);
 		var img = new Image();
 		img.src = orisrc;
-		img.onerror = setTimeout(function(){
+		img.onerror = function(){setTimeout(function(){
 			var tail = (function(){switch(srctry++){case 0:return ".png";case 1:return "gif";default:return false;}})();
 			if(tail){
 				img.src = ori + tail;
@@ -27,7 +27,7 @@
 			else {
 				document.body.innerHTML = document.body.innerHTML.replace("href=\"" + orisrc + "\" download=" + memm[1], "href=\"" + (orisrc = memm[0]) + "\"");
 			}
-		},300);
+		},300);};
 		clearInterval(itttval);
 	}
 	setTimeout(function(){clearInterval(itttval)},10000);
