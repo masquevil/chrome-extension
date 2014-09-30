@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       Pixiv Saver
 // @namespace  http://www.soulran.com/
-// @version    0.3.2
+// @version    1.0
 // @description  Download the image with "mode=medium" in pixiv in the complete size.
 // @match      http://www.pixiv.net/member_illust.php?mode=medium&illust_id=*
 // @run-at      document-end
