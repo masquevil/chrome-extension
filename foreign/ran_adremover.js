@@ -2,6 +2,8 @@
 // @name		Ad remover
 // @namespace	http://www.soulran.com/
 // @version		0.1
+// @updateURL	https://raw.githubusercontent.com/masquevil/chrome-extension/master/foreign/ran_adremover.js
+// @downloadURL	https://raw.githubusercontent.com/masquevil/chrome-extension/master/foreign/ran_adremover.js
 // @description	enter something useful
 // @match		*://*/*
 // @copyright	2014+, Soulran

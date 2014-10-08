@@ -2,6 +2,8 @@
 // @name       Pixiv Saver
 // @namespace  http://www.soulran.com/
 // @version    1.0
+// @updateURL	https://raw.githubusercontent.com/masquevil/chrome-extension/master/foreign/pixivsaver.js
+// @downloadURL	https://raw.githubusercontent.com/masquevil/chrome-extension/master/foreign/pixivsaver.js
 // @description  Download the image with "mode=medium" in pixiv in the complete size.
 // @match      http://www.pixiv.net/member_illust.php?mode=medium&illust_id=*
 // @run-at      document-end

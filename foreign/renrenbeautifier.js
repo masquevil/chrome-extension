@@ -2,6 +2,8 @@
 // @name       RenRen Beautifier | For V7
 // @namespace  http://www.soulran.com/
 // @version    0.12
+// @updateURL	https://raw.githubusercontent.com/masquevil/chrome-extension/master/foreign/renrenbeautifier.js
+// @downloadURL	https://raw.githubusercontent.com/masquevil/chrome-extension/master/foreign/renrenbeautifier.js
 // @description  Remove ad and something I dislike.
 // @match      http://*.renren.com/*
 // @run-at      document-end
